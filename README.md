@@ -92,7 +92,7 @@ Predicting daily hotel room rates (ADR) and booking cancellations (CNC) is cruci
 * **Best Model**: XGBoost Classifier (highest Recall and AUC)
 * **Key Features**: `deposit_type_non_refundable`, `previous_cancellations`, `customer_type_transient`, `booking_changes`
 
-> The neural network model showed robust performance across both tasks without overfitting, confirming the hypothesis about its superior learning capacity.
+The neural network model showed robust performance across both tasks without overfitting, confirming the hypothesis about its superior learning capacity.
 
 ![DL Training and Validation History](https://github.com/user-attachments/assets/2d86222e-50d3-48d0-b3f1-7a468a36205d)
 
