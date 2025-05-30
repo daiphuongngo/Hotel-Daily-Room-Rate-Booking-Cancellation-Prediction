@@ -70,6 +70,10 @@ Predicting daily hotel room rates (ADR) and booking cancellations (CNC) is cruci
 * Applied 5-fold cross-validation with grid search for RF and XGBoost
 * Neural Network designed with dual-heads: regression and classification
 
+![LinReg](https://github.com/user-attachments/assets/11080ad6-29b3-4ff4-818e-1e4547435f96)
+
+![Diagram of Neural Network](https://github.com/user-attachments/assets/89b01cf1-fceb-4615-bcc6-9cc5ec705ec0)
+
 ---
 
 ## Results
@@ -79,12 +83,18 @@ Predicting daily hotel room rates (ADR) and booking cancellations (CNC) is cruci
 * **Best Model**: Neural Network and XGBoost Regressor (lowest RMSE)
 * **Key Features**: `checkin_season_summer`, room types, number of guests
 
+![DL Training and Validation History](https://github.com/user-attachments/assets/927f1c67-b87a-4b44-a99c-b9ec9d9472bc)
+
+![Feature Importance](https://github.com/user-attachments/assets/c444e375-aacb-4f4f-b816-c50372728f99)
+
 ### Cancellation Prediction
 
 * **Best Model**: XGBoost Classifier (highest Recall and AUC)
 * **Key Features**: `deposit_type_non_refundable`, `previous_cancellations`, `customer_type_transient`, `booking_changes`
 
 > The neural network model showed robust performance across both tasks without overfitting, confirming the hypothesis about its superior learning capacity.
+
+![DL Training and Validation History](https://github.com/user-attachments/assets/2d86222e-50d3-48d0-b3f1-7a468a36205d)
 
 ---
 
@@ -94,6 +104,12 @@ Predicting daily hotel room rates (ADR) and booking cancellations (CNC) is cruci
 * Diagnostic plots for residual normality and homoscedasticity
 * Feature importance charts for XGBoost models
 * ROC curves for classification comparison
+
+![Comparison of R-squared and RMSE](https://github.com/user-attachments/assets/c205cac7-fd88-4960-8852-9d39f5bde086)
+
+![ROC Curve](https://github.com/user-attachments/assets/aef529dc-3e78-4ad0-9783-e33fb23eca84)
+
+![Metric Comparison](https://github.com/user-attachments/assets/2c027520-8b76-4790-94fc-434a329b18b0)
 
 ---
 
@@ -118,15 +134,6 @@ Predicting daily hotel room rates (ADR) and booking cancellations (CNC) is cruci
 * Incorporate time series modeling (e.g., LSTM) for temporal dependencies
 * Include external signals like competitor pricing or local events
 * Optimize model deployment for real-time booking systems
-
----
-
-## Appendix
-
-* **Model training scripts** (PyTorch, scikit-learn, XGBoost)
-* **Hyperparameter tuning** via GridSearchCV
-* **Data Dictionary**: Detailed explanation of all dataset features
-* **Full VIF and diagnostics plots** (see `/notebooks/eda/`)
 
 ---
 
